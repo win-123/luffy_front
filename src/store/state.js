@@ -1,0 +1,31 @@
+
+export default {
+  login_state: false,
+  login_ing: false,
+  register_ing: false,
+  study_show: false,
+  foot_show: false,
+  study_hide: true,
+  course_link:{
+    1:{name:'computer-course-detail',params:{id:'1'}},
+    2:{name:'course-detail',params:{id:'2'}},
+    3:{name:'course-detail-sec',params:{id:'3'}},
+    4:{name:'mysql-course-detail',params:{id:'4'}},
+    5:{name:'python-course-detail',params:{id:'5'}},
+    6:{name:'course-detail',params:{id:'6'}},
+    7:{name:'finance-course-detail',params:{id:'7'}},
+    8:{name:'web-course-detail',params:{id:'8'}},
+    9:{name:'course-detail',params:{id:'9'}},
+    10:{name:'algorithm-course-detail',params:{id:'10'}},
+    11:{name:'net-course-detail',params:{id:'11'}},
+    12:{name:'linux-course-detail',params:{id:'12'}},
+    // 21:{name:'course-detail',params:{id:'21'}}},
+    username:Cookies.get('username') || localStorage.getItem('username'),
+    side_position: '',
+    Authorization: Cookies.get('token') || localStorage.getItem('token'),
+    userImg:Cookies.get('userImg') || localStorage.getItem('userImg'),
+    shopCartNumber: "",
+    noticeNumber: "",
+    // userImg: "",
+  }
+}
